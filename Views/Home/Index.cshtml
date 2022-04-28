@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron text-center" style="margin-top: 10px">
+    <h1>LifeTech</h1>
+    <p class="lead">
+        Mon - Sat: 07:00 - 19:30 <br />
+        Sun: Closed
+    </p>
+    <a href="#contact" class="btn btn-primary btn-lg">Get in Contact</a>
+</div>
+
+<section class="appointment-btn text-center">
+    <h2>Schedule your appointment online</h2>
+    <p>@Html.ActionLink("Book an Appointment", "Contact", "Home", new { area = "" }, new { @class = "btn btn-default" })</p>
+</section>
+<br />
+<section class="container-fluid text-center">
+    <h2 style="margin-bottom: 2.5vh">Your health is important</h2>
+    <h4>We can help</h4>
+    <br />
+    <div class="row" style="margin-bottom: 15px">
+        <div class="col-md-4 panel">
+            <span class="glyphicon glyphicon-heart" style="font-size: 50px"></span>
+            <h4>CARE</h4>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+        <div class="col-md-4 panel">
+            <span class="glyphicon glyphicon-wrench" style="font-size: 50px"></span>
+            <h4>HARD WORK</h4>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+        <div class="col-md-4 panel">
+            <span class="glyphicon glyphicon-certificate" style="font-size: 50px"></span>
+            <h4>CERTIFIED</h4>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </div> 
+        
+    </div>
+    <p>@Html.ActionLink("Learn more", "About", "Home", new { area = "" }, new { @class = "btn btn-default" })</p>
+
+    <br />
+    <br />
+    <h2>What we do</h2>
+    <br />
+    <div class="row">
+        <div class="col-md-4 panel">
+            <h4>SERVICE 1</h4>
+            <p>Invidunt dolore nam sed qui autem facilisis feugait elitr vel lorem velit dolores accumsan nonumy est vel dolore</p>
+            <p>@Html.ActionLink("Learn more", "Service1", "Home", new { area = "" }, new { @class = "btn btn-default" })</p>
+        </div>
+        <div class="col-md-4 panel">
+            <h4>SERVICE 2</h4>
+            <p>Vel voluptua lorem voluptua sea in in feugiat ea quis accusam erat duis dolor feugiat dolor dolore nisl nisl et</p>
+            <p>@Html.ActionLink("Learn more", "Service1", "Home", new { area = "" }, new { @class = "btn btn-default" })</p>
+        </div>
+        <div class="col-md-4 panel">
+            <h4>SERVICE 3</h4>
+            <p>Labore diam eirmod accusam sanctus labore lorem liber feugait soluta exerci vero diam sed duo option</p>
+            <p>@Html.ActionLink("Learn more", "Service1", "Home", new { area = "" }, new { @class = "btn btn-default" })</p>
+        </div>
+    </div>
+</section>
+
+<br />
+<hr />
+<div id="contact" class="container-fluid">
+    <h2 class="text-center">CONTACT</h2>
+    <br />
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> &nbsp; Address</p>
+            <p><span class="glyphicon glyphicon-phone"></span> &nbsp; 123-456 78 90</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> &nbsp; email@example.com</p>
+        </div>
+        <div class="col-sm-7">
+            <form action="https://formsubmit.co/sup.lifetech@gmail.com" method="POST">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" type="text" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 
